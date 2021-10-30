@@ -1,0 +1,16 @@
+{
+  "name": "guesty",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "all:install": "(cd client && npm i && cd ../server && npm i)",
+    "client:start": "(cd client && npm run start)",
+    "server:start": "(cd server && npm run start)",
+    "server:dev": "(cd server && npm run dev)",
+    "build": "(cd client && npm run build)",
+    "postbuild": "mv ./client/build/* ./server/public"
+  },
+  "author": "",
+  "license": "ISC"
+}
